@@ -6,7 +6,7 @@ file = open('git_repo.csv', 'w')
 writer = csv.writer(file)
 writer.writerows([['Name', 'Description', 'Stars', 'Language', 'Updated on']])
 
-search_term = 'CVE 2018'
+search_term = input('Enter the search term for repositories: )
 formatted_search_term = search_term.replace(' ', '+')
 link = f'https://github.com/search?q={formatted_search_term}&type=Repositories'
 try:
